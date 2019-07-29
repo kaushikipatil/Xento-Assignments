@@ -1,15 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		body
-		{
-			background-color: white;
-		}
-	</style>
-	<title>frame2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
 <body>
 
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#About">About</a>
+  <a href="#Fac">Facilities</a>
+  <a href="#Aca">Academic</a>
+  <a href="#Adm">Admission</a>
+  <a href="#Tap">T & P</a>
+  <a href="#RaD">R & D/ED cell</a>
+  <a href="#stud">Student</a>
+  <a href="#NAAC">NAAC</a>
+  <a hrsef="#ALumni">Alumni</a>
+  <a href="#Conatct">Conatct</a>
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">About MVP</a>
+      <a href="#">Message from Sarchitinis</a>
+      <a href="#">Govering Bodies</a>
+      <a href="#">Prinicpal Desk</a>
+      <a href="#">Vice-Prinicpal Desk</a>
+      <a href="#">Committees</a>
+      <a href="#">College at a Glance</a>
+      <a href="#">Vision and Mission</a>
+    </div>
+   </div>
+    <div class="dropdown">
+    <button class="dropbtn">Facilities 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Administration Staff</a>
+      <a href="#">Hostel</a>
+      <a href="#">Sports</a>
+      <a href="#">Library</a>
+      <a href="#">MVP ERP</a>
+      <a href="#">Internet Facility</a>
+      <a href="#">SAP Center</a>
+      <a href="#">Administrative Structure</a>
+    </div>
+   </div>
+    <div class="dropdown">
+    	<button class="dropbtn"> Academic
+    		<i class="fa-caret-down"></i>
+
+    	</button>
+    	
+    </div>
+
+  </div> 
+</div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
+</html>
+
+
+
+
+<body>
+	<ul>
+		<li><a href="#HOME">HOME</a></li>
+		<li><a href="#About">About</a></li>
+		<li><a href="#Fac">Facilities</a></li>
+		<li><a href="#Aca">Academic</a></li>
+		<li><a href="#Adm">Admission</a></li>
+		<li><a href="#Tap">T & P</a></li>
+		<li><a href="#RaD">R & D/ED cell</a></li>
+		<li><a href="#stud">Student</a></li>
+		<li><a href="#NAAC">NAAC</a></li>
+		<li><a hrsef="#ALumni">Alumni</a></li>
+		<li><a href="#Conatct">Conatct</a></li>
+	</ul>
 </body>
 </html>
